@@ -82,7 +82,8 @@ var language = {
         message: "Message",
         messageRequired: "A message is required.",
         submitButton: "Send",
-
+        submitSuccessText: "Message send successfully!",
+        submitErrorText: "Error sending message!",
         footerContact: "Contact without form",
         portfolioModal1Title: "Data Prediction",
         portfolioModal1Text: "University Project in which I developed a data prediction model. LINK. ",
@@ -117,7 +118,8 @@ var language = {
         messageForm: "Nachricht",
         messageRequired: "Nachricht benötigt.",
         submitButton: "Abschicken",
-
+        submitSuccessText: "Nachricht erfolgreich gesendet!",
+        submitErrorText: "Fehler beim Senden der Nachricht!",
         footerContact: "Contact without form",
         portfolioModal1Title: "Daten Vorhersage",
         portfolioModal1Text: "Uni Projekt bei dem ein Model zur Vorhersage von Daten entwickelt wurde. LINK.",
@@ -157,6 +159,8 @@ if (window.location.hash == "#de") {
         messageForm.textContent = language.de.messageForm;
         messageRequired.textContent = language.de.messageRequired;
         footerContact.textContent = language.de.footerContact;
+        submitSuccessText.textContent = language.de.submitSuccessText;
+        submitErrorText.textContent = language.de.submitErrorText;
         submitButton.textContent = language.de.submitButton;
         portfolioModal1Title.textContent = language.de.portfolioModal1Title;
         portfolioModal1Text.textContent = language.de.portfolioModal1Text;
@@ -191,6 +195,8 @@ else if (window.location.hash == "#eng") {
         message.textContent = language.eng.message;
         messageRequired.textContent = language.eng.messageRequired;
         footerContact.textContent = language.eng.footerContact;
+        submitSuccessText.textContent = language.eng.submitSuccessText;
+        submitErrorText.textContent = language.eng.submitErrorText;
         portfolioModal1Title.textContent = language.eng.portfolioModal1Title;
         portfolioModal1Text.textContent = language.eng.portfolioModal1Text;
         portfolioModal2Title.textContent = language.eng.portfolioModal2Title;
@@ -208,8 +214,8 @@ else if (window.location.hash == "#eng") {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    fields.name = document.getElementById('name');
-    fields.email = document.getElementById('email');
-    fields.phone = document.getElementById('phone');
-    fields.message = document.getElementById('message');
+    formFields.name = document.getElementById('name');
+    formFields.email = document.getElementById('email');
+    formFields.phone = document.getElementById('phone');
+    formFields.message = document.getElementById('message');
    })
