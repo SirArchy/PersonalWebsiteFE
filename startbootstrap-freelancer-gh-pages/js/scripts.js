@@ -60,23 +60,12 @@ window.addEventListener('DOMContentLoaded', event => {
   // Define the language reload anchors
     var language = {
         eng: {
-        welcome:
-            "Welcome to the GeeksforGeeks " +
-            "Portal! You can choose any " +
-            "language using the buttons above!",
+        welcome: "asdasd"
         },
-        es: {
-          welcome:
-            "¡Bienvenido al portal GeeksforGeeks! " +
-            "¡Puedes elegir cualquier idioma usando " +
-            "los botones de arriba!",
+        de: {
+          welcome: "asdasd"
         },
-        hin: {
-          welcome:
-            "GeeksforGeeks पोर्टल पर आपका स्वागत है! " +
-            "आप ऊपर दिए गए बटन का उपयोग करके किसी भी " +
-            "भाषा को चुन सकते हैं!",
-        },
+
     };
 
     // Check if a hash value exists in the URL
