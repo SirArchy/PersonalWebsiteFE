@@ -7,6 +7,8 @@
 // Scripts
 // 
 
+var formFields = {};
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -58,7 +60,7 @@ function changeLanguage(lang) {
     location.reload();
   }
     
-  // Define the language reload anchors
+// Define the language reload anchors
 var language = {
     eng: {
         navbarResponsiveProjects: "Projects",
@@ -203,3 +205,11 @@ else if (window.location.hash == "#eng") {
         portfolioModal6Text.textContent = language.eng.portfolioModal6Text;
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    fields.name = document.getElementById('name');
+    fields.email = document.getElementById('email');
+    fields.phone = document.getElementById('phone');
+    fields.message = document.getElementById('message');
+   })
