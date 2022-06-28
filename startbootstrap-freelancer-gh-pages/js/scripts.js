@@ -79,6 +79,7 @@ var language = {
         phoneNumberRequired: "A phone number is required.",
         message: "Message",
         messageRequired: "A message is required.",
+        submitButton: "Send",
 
         footerContact: "Contact without form",
         portfolioModal1Title: "Data Prediction",
@@ -101,18 +102,19 @@ var language = {
         mastheadSubheading: "Anstrebender Programmierer - Werkstudent - Gaming Enthusiast",
         sectionHeadingProjects: "Projekte",
         sectionHeadingAbout: "Über mich",
-        sectionContentAboutP1: "Hi mein Name st Fabian Ebert. Ich bin ein anstrebender Programmier und arbeite zur Zeit bei Misterspex in Berlin als Werkstudent im QA Bereich. Ich studiere Computational Engineering Sciences an der TU Berlin.",
+        sectionContentAboutP1: "Hi mein Name ist Fabian Ebert. Ich bin ein anstrebender Programmier und arbeite zur Zeit bei Misterspex in Berlin als Werkstudent im QA Bereich. Ich studiere Computational Engineering Sciences an der TU Berlin.",
         sectionContentAboutP2: "Ich hab Erfahrung mit JavaScript, Python, C, Relationalen Datenbanken und ... . Durch das Arbeiten in einem agilen Arbeitsumfeld kenn ich mich zudem sehr gut mit Confluence, Jira, Github, Scrum und Kanban aus. Für alle Business Anfragen benutzt bitte das Kontaktformular weiter unten.",
         sectionHeadingContact: "Kontaktier mich",
         fullName: "Kompletter Name",
         nameRequired: "Name benötigt.",
-        email:"Email Adresse",
+        emailForm:"Email Adresse",
         emailRequired: "Email Adresse benötigt.",
         emailInvalid: "Email Adresse ist nicht gültig.",
-        phoneNumber: "Telefonnummer",
+        phoneNumberForm: "Telefonnummer",
         phoneNumberRequired: "Telefonnummer benötigt.",
-        message: "Nachricht",
+        messageForm: "Nachricht",
         messageRequired: "Nachricht benötigt.",
+        submitButton: "Abschicken",
 
         footerContact: "Contact without form",
         portfolioModal1Title: "Daten Vorhersage",
@@ -145,14 +147,15 @@ if (window.location.hash == "#de") {
         sectionHeadingContact.textContent = language.de.sectionHeadingContact;
         fullName.textContent = language.de.fullName;
         nameRequired.textContent = language.de.nameRequired;
-        email.textContent = language.de.email;
+        emailForm.textContent = language.de.emailForm;
         emailRequired.textContent = language.de.emailRequired;
         emailInvalid.textContent = language.de.emailInvalid;
-        phoneNumber.textContent = language.de.phoneNumber;
+        phoneNumberForm.textContent = language.de.phoneNumberForm;
         phoneNumberRequired.textContent = language.de.phoneNumberRequired;
-        message.textContent = language.de.message;
+        messageForm.textContent = language.de.messageForm;
         messageRequired.textContent = language.de.messageRequired;
         footerContact.textContent = language.de.footerContact;
+        submitButton.textContent = language.de.submitButton;
         portfolioModal1Title.textContent = language.de.portfolioModal1Title;
         portfolioModal1Text.textContent = language.de.portfolioModal1Text;
         portfolioModal2Title.textContent = language.de.portfolioModal2Title;
