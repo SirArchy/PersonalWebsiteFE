@@ -27,17 +27,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Projects</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio" id="navbarResponsiveProjects">Projects</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about" id="navbarResponsiveAbout">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" id="navbarResponsiveContact">Contact</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="changeLanguage('de')">Deutsch</a></li> 
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="changeLanguage('eng')">English</a></li>
                     </ul>
-  
-                    <!-- Define the content of the page
-                    that would be changed -->
-                    <p id="siteContent">
-                    </p>
                 </div>
             </div>
         </nav>
@@ -53,14 +48,14 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Aspiring Software Engineer - Working Student - Gaming Enthusiast</p>
+                <p class="masthead-subheading font-weight-light mb-0" id="mastheadSubheading">Aspiring Software Engineer - Working Student - Gaming Enthusiast</p>
             </div>
         </header>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" id="sectionHeadingProjects">Projects</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -128,15 +123,15 @@
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white" id="sectionHeadingAbout">About</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Hi my name is Fabian Ebert. I'm an aspiring software engineer currently working for MisterSpex in Berlin as a working student. I'm studying Computational Engineering Sciences at the TU Berlin.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">I have experience with JavaScript, Python, C, relational databases and ... . Thanks to working in an agile environment I know my way around Confluence, Jira, Github, Scrum and Kanban. For any business inquiries please use the contact form below. </p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead" id="sectionContentAboutP1">Hi my name is Fabian Ebert. I'm an aspiring software engineer currently working for MisterSpex in Berlin as a working student. I'm studying Computational Engineering Sciences at the TU Berlin.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead" id="sectionContentAboutP2">I have experience with JavaScript, Python, C, relational databases and ... . Thanks to working in an agile environment I know my way around Confluence, Jira, Github, Scrum and Kanban. For any business inquiries please use the contact form below.</p></div>
                 </div>
             </div>
         </section>
@@ -144,7 +139,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" id="sectionHeadingContact">Contact Me</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -157,27 +152,27 @@
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <label for="name" id="fullName">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required" id="nameRequired">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <label for="email" id="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required" id="emailRequired">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email" id="emailInvalid">Email is not valid.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <label for="phone" id="phoneNumber">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required" id="phoneNumberRequired">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <label for="message" id="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required" id="messageRequired">A message is required.</div>
                             </div>
                             <!-- Submit success message-->
                             <!---->
@@ -215,7 +210,7 @@
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-6">
-                        <h4 class="text-uppercase mb-4">Contact without form</h4>
+                        <h4 class="text-uppercase mb-4" id="footerContact">Contact without form</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="mailto:fabian.ebert@online.de"><i class="fa-regular fa-envelope"></i></i></a>
                     </div>
                 </div>
@@ -232,7 +227,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Data Prediction</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Title">Data Prediction</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -240,7 +235,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/predictive-models.png" width="420" height="420" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">University Project in which I developed a data prediction model. LINK. <a href="https://www.flaticon.com/free-icons/data-mining" title="data mining icons">Icon created by Becris - Flaticon</a></p>
+                                    <p class="mb-4" id="portfolioModal1Text">University Project in which I developed a data prediction model. LINK. </p>
+                                    <p><a href="https://www.flaticon.com/free-icons/data-mining" title="data mining icons">Icon created by Becris - Flaticon</a></p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -262,7 +258,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Web Scraper</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Title">Web Scraper</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -270,7 +266,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/icons8-web-scraper-512.png" width="420" height="420" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">First small project. Created a bot that runs every morning to download free stuff from CreativeFabrica LINK. <a href="https://icons8.com/icon/22ADDtoHE10k/web-scraper" title="monitoring icons">Icon created by Icons8</a></p>
+                                    <p class="mb-4" id="portfolioModal2Text">First small project. Created a bot that runs every morning to download free stuff from CreativeFabrica LINK. </p>
+                                    <p><a href="https://icons8.com/icon/22ADDtoHE10k/web-scraper" title="monitoring icons">Icon created by Icons8</a></p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -292,7 +289,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bug Tracking / Monitoring</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Title">Bug Tracking / Monitoring</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -300,7 +297,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/monitoring.png" width="420" height="420" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">First big own project, created a monitoring website LINK.<a href="https://www.flaticon.com/free-icons/monitoring" title="monitoring icons">Icon created by Eucalyp - Flaticon</a></p>
+                                    <p class="mb-4" id="portfolioModal3Text">First big own project, created a monitoring website LINK.</p>
+                                    <p><a href="https://www.flaticon.com/free-icons/monitoring" title="monitoring icons">Icon created by Eucalyp - Flaticon</a></p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -322,7 +320,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Relational Databases</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Title">Relational Databases</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -330,7 +328,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/data-science.png" width="420" height="420" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Work with relational databases, I know SQL. Also created my own LINK. <a href="https://www.flaticon.com/free-icons/data-science" title="data science icons">Icon created by Becris - Flaticon</a></p>
+                                    <p class="mb-4" id="portfolioModal4Text">Work with relational databases, I know SQL. Also created my own LINK. </p>
+                                    <p><a href="https://www.flaticon.com/free-icons/data-science" title="data science icons">Icon created by Becris - Flaticon</a></p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -352,7 +351,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Quality Assurance</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Title">Quality Assurance</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -360,7 +359,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/approved.png" width="420" height="420" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Worked with CodeceptJS and Cypress. <a href="https://www.flaticon.com/free-icons/quality-assurance" title="quality assurance icons">Icon created by Freepik - Flaticon</a></p>
+                                    <p class="mb-4" id="portfolioModal5Text">Worked with CodeceptJS and Cypress. </p>
+                                    <p><a href="https://www.flaticon.com/free-icons/quality-assurance" title="quality assurance icons">Icon created by Freepik - Flaticon</a></p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -382,7 +382,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SCRUM & Kanban</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Title">SCRUM & Kanban</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -390,7 +390,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/agil.png" width="420" height="420" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">I work with SCRUM and Kanban on a daily basis and am very comfortable with both. <a href="https://www.flaticon.com/de/kostenlose-icons/agil" title="agil Icons">Icon created by Freepik - Flaticon</a></p>
+                                    <p class="mb-4" id="portfolioModal6Text">I work with SCRUM and Kanban on a daily basis and am very comfortable with both.</p>
+                                    <p><a href="https://www.flaticon.com/de/kostenlose-icons/agil" title="agil Icons">Icon created by Freepik - Flaticon</a> </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
