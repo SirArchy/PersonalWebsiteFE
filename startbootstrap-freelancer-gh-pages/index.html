@@ -147,47 +147,26 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <!-- NEEDS TO BE ADJUSTED -->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formsubmit.co/wnbemail456@gmail.com" method="POST">
+                        <form id="contactForm" action="https://formsubmit.co/wnbemail456@gmail.com" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" name="name" />
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." name="name" required/>
                                 <label for="name" id="fullName">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required" id="nameRequired">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" name="email" />
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" name="email" required/>
                                 <label for="email" id="emailForm">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required" id="emailRequired">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email" id="emailInvalid">Email is not valid.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" name="message"></textarea>
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" name="message" required></textarea>
                                 <label for="message" id="messageForm">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required" id="messageRequired">A message is required.</div>
                             </div>
                             <!-- Reply message -->
                             <input type="hidden" name="_autoresponse" value="Thanks for your interest in me! I will message you back within 2 days.">
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder" id = "submitSuccessText">Message send successfully!</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3" id="submitErrorText">Error sending message!</div>
-                            </div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
                         </form>
                     </div>
                 </div>

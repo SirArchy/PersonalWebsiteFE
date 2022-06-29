@@ -73,17 +73,9 @@ var language = {
         sectionContentAboutP2: "I have experience with JavaScript, Python, C, relational databases and ... . Thanks to working in an agile environment I know my way around Confluence, Jira, Github, Scrum and Kanban. For any business inquiries please use the contact form below.",
         sectionHeadingContact: "Contact Me",
         fullName: "Full name",
-        nameRequired: "A name is required.",
         email:"Email address",
-        emailRequired: "An email is required.",
-        emailInvalid: "Email is not valid.",
-        phoneNumber: "Phone number",
-        phoneNumberRequired: "A phone number is required.",
         message: "Message",
-        messageRequired: "A message is required.",
         submitButton: "Send",
-        submitSuccessText: "Message send successfully!",
-        submitErrorText: "Error sending message!",
         footerContact: "Contact without form",
         portfolioModal1Title: "Data Prediction",
         portfolioModal1Text: "University Project in which I developed a data prediction model. LINK. ",
@@ -109,17 +101,9 @@ var language = {
         sectionContentAboutP2: "Ich hab Erfahrung mit JavaScript, Python, C, Relationalen Datenbanken und ... . Durch das Arbeiten in einem agilen Arbeitsumfeld kenn ich mich zudem sehr gut mit Confluence, Jira, Github, Scrum und Kanban aus. Für alle Business Anfragen benutzt bitte das Kontaktformular weiter unten.",
         sectionHeadingContact: "Kontaktier mich",
         fullName: "Kompletter Name",
-        nameRequired: "Name benötigt.",
         emailForm:"Email Adresse",
-        emailRequired: "Email Adresse benötigt.",
-        emailInvalid: "Email Adresse ist nicht gültig.",
-        phoneNumberForm: "Telefonnummer",
-        phoneNumberRequired: "Telefonnummer benötigt.",
         messageForm: "Nachricht",
-        messageRequired: "Nachricht benötigt.",
         submitButton: "Abschicken",
-        submitSuccessText: "Nachricht erfolgreich gesendet!",
-        submitErrorText: "Fehler beim Senden der Nachricht!",
         footerContact: "Contact without form",
         portfolioModal1Title: "Daten Vorhersage",
         portfolioModal1Text: "Uni Projekt bei dem ein Model zur Vorhersage von Daten entwickelt wurde. LINK.",
@@ -150,17 +134,9 @@ if (window.location.hash == "#de") {
         sectionContentAboutP2.textContent = language.de.sectionContentAboutP2;
         sectionHeadingContact.textContent = language.de.sectionHeadingContact;
         fullName.textContent = language.de.fullName;
-        nameRequired.textContent = language.de.nameRequired;
         emailForm.textContent = language.de.emailForm;
-        emailRequired.textContent = language.de.emailRequired;
-        emailInvalid.textContent = language.de.emailInvalid;
-        phoneNumberForm.textContent = language.de.phoneNumberForm;
-        phoneNumberRequired.textContent = language.de.phoneNumberRequired;
         messageForm.textContent = language.de.messageForm;
-        messageRequired.textContent = language.de.messageRequired;
         footerContact.textContent = language.de.footerContact;
-        submitSuccessText.textContent = language.de.submitSuccessText;
-        submitErrorText.textContent = language.de.submitErrorText;
         submitButton.textContent = language.de.submitButton;
         portfolioModal1Title.textContent = language.de.portfolioModal1Title;
         portfolioModal1Text.textContent = language.de.portfolioModal1Text;
@@ -186,18 +162,9 @@ else if (window.location.hash == "#eng") {
         sectionContentAboutP2.textContent = language.eng.sectionContentAboutP2;
         sectionHeadingContact.textContent = language.eng.sectionHeadingContact;
         fullName.textContent = language.eng.fullName;
-        nameRequired.textContent = language.eng.nameRequired;
         email.textContent = language.eng.email;
-        emailRequired.textContent = language.eng.emailRequired;
-        emailInvalid.textContent = language.eng.emailInvalid;
-        phoneNumber.textContent = language.eng.phoneNumber;
-        phoneNumberRequired.textContent = language.eng.phoneNumberRequired;
         message.textContent = language.eng.message;
-        messageRequired.textContent = language.eng.messageRequired;
         footerContact.textContent = language.eng.footerContact;
-        submitSuccessText.textContent = language.eng.submitSuccessText;
-        submitErrorText.textContent = language.eng.submitErrorText;
-        //THESE DONT CHANGE, DONT KNOW WHY
         portfolioModal1Title.textContent = language.eng.portfolioModal1Title;
         portfolioModal1Text.textContent = language.eng.portfolioModal1Text;
         portfolioModal2Title.textContent = language.eng.portfolioModal2Title;
