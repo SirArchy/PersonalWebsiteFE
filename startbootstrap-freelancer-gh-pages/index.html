@@ -30,8 +30,8 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio" id="navbarResponsiveProjects">Projects</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about" id="navbarResponsiveAbout">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" id="navbarResponsiveContact">Contact</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="changeLanguage('de')">Deutsch</a></li> 
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="changeLanguage('eng')">English</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="changeLanguage('de')"><img class="img-fluid" src="assets/img/germany-flag-icon-64.png"  height="48" width="48"/></a></li> 
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="changeLanguage('eng')"><img class="img-fluid" src="assets/img/united-kingdom-flag-icon-64.png" height="48" width="48"/></a></li>
                     </ul>
                 </div>
             </div>
@@ -151,23 +151,25 @@
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formsubmit.co/wnbemail456@gmail.com" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" name="name" />
                                 <label for="name" id="fullName">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required" id="nameRequired">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" name="email" />
                                 <label for="email" id="emailForm">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required" id="emailRequired">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email" id="emailInvalid">Email is not valid.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" name="message"></textarea>
                                 <label for="message" id="messageForm">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required" id="messageRequired">A message is required.</div>
                             </div>
+                            <!-- Reply message -->
+                            <input type="hidden" name="_autoresponse" value="Thanks for your interest in me! I will message you back within 2 days.">
                             <!-- Submit success message-->
                             <!---->
                             <!-- This is what your users will see when the form-->

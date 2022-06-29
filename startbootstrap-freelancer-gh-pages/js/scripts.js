@@ -197,6 +197,7 @@ else if (window.location.hash == "#eng") {
         footerContact.textContent = language.eng.footerContact;
         submitSuccessText.textContent = language.eng.submitSuccessText;
         submitErrorText.textContent = language.eng.submitErrorText;
+        //THESE DONT CHANGE, DONT KNOW WHY
         portfolioModal1Title.textContent = language.eng.portfolioModal1Title;
         portfolioModal1Text.textContent = language.eng.portfolioModal1Text;
         portfolioModal2Title.textContent = language.eng.portfolioModal2Title;
