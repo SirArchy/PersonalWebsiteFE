@@ -168,7 +168,16 @@
                             <!-- Redirect -->
                             <input type="hidden" name="_next" value="https://fabianebert.tech/index.html#contact">
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>                  
+                            <div>
+                                <button class="btn btn-primary btn-xl" id="submitButton" type="submit" onclick="showHide()">Send</button>   
+                                <div class="mb-3 fw-bolder" id="submitSuccessMessage" style="display:none">Form submission successful!</div>        
+                            </div>
+                            <script>
+                                function showHide() {
+                                        document.getElementById("submitSuccessMessage").style.display = "block";
+                                }
+                            </script>
+ 
                         </form>
                     </div>
                 </div>
@@ -186,7 +195,7 @@
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-6">
-                        <h4 class="text-uppercase mb-4" id="footerContact">Contact without form</h4>
+                        <h4 class="text-uppercase mb-4" id="footerContact">direct email</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="mailto:fabian.ebert@online.de"><i class="fa-regular fa-envelope"></i></i></a>
                     </div>
                 </div>

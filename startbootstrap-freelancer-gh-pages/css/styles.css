@@ -42,7 +42,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 25, 22, 29;
-  --bs-secondary-rgb: 195, 195, 213;
+  --bs-secondary-rgb: 255, 126, 150;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -74,6 +74,12 @@
   :root {
     scroll-behavior: smooth;
   }
+}
+
+.disclaimer{
+
+  display: none;
+
 }
 
 body {
