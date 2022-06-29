@@ -211,11 +211,3 @@ else if (window.location.hash == "#eng") {
         portfolioModal6Text.textContent = language.eng.portfolioModal6Text;
     }
 }
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    formFields.name = document.getElementById('name');
-    formFields.email = document.getElementById('email');
-    formFields.phone = document.getElementById('phone');
-    formFields.message = document.getElementById('message');
-   })

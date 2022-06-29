@@ -148,7 +148,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
                         <!-- NEEDS TO BE ADJUSTED -->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formsubmit.co/wnbemail456@gmail.com" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -161,12 +161,6 @@
                                 <label for="email" id="emailForm">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required" id="emailRequired">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email" id="emailInvalid">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone" id="phoneNumberForm">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required" id="phoneNumberRequired">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
@@ -181,9 +175,6 @@
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder" id = "submitSuccessText">Message send successfully!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
                             <!-- Submit error message-->
