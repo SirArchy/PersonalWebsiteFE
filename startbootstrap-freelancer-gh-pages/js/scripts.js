@@ -78,17 +78,23 @@ var language = {
         submitButton: "Send",
         footerContact: "direct email",
         portfolioModal1Title: "Data Prediction",
-        portfolioModal1Text: "University Project in which I developed a data prediction model. LINK. ",
+        portfolioModal1Text: "University Project for which we developed a data prediction model. Link to the Github page:",
         portfolioModal2Title: "Web Scraper",
-        portfolioModal2Text: "First small project. Created a bot that runs every morning to download free stuff from CreativeFabrica LINK.",
+        portfolioModal2Text: "My first small project. I created a bot that runs every morning to download free stuff from CreativeFabrica. Link to the Github page:",
         portfolioModal3Title: "Bug Tracking / Monitoring",
-        portfolioModal3Text: "First big own project, created a monitoring website LINK.",
+        portfolioModal3Text: "My first bigger project. I created a monitoring website that can track... .Link to the Github page: ",
         portfolioModal4Title: "Relational Databases",
-        portfolioModal4Text: "Work with relational databases, I know SQL. Also created my own LINK. ",
+        portfolioModal4Text: "I created my own relational database to store ... . Link to the page: ",
         portfolioModal5Title: "Quality Assurance",
-        portfolioModal5Text: "Worked with CodeceptJS and Cypress. ",
+        portfolioModal5Text: "I work with CodeceptJS and Cypress daily. That is why I implemented automated tests in my bigger project. Link to the Github page: ",
         portfolioModal6Title: "SCRUM & Kanban",
-        portfolioModal6Text: "I work with SCRUM and Kanban on a daily basis and am very comfortable with both.",
+        portfolioModal6Text: "I work with SCRUM and Kanban on a daily basis and am very comfortable with both. For my projects I used Trello to implement SCRUM. Link to the Trello board: ",
+        iconPFM1: "Icon created by Becris - Flaticon",
+        iconPFM2: "Icon created by Icons8",
+        iconPFM3: "Icon created by Eucalyp - Flaticon",
+        iconPFM4: "Icon created by Becris - Flaticon",
+        iconPFM5: "Icon created by Freepik - Flaticon",
+        iconPFM6: "Icon created by Freepik - Flaticon",
     },
     de: {
         navbarResponsiveProjects: "Projekte",
@@ -106,17 +112,23 @@ var language = {
         submitButton: "Abschicken",
         footerContact: "direkte Email",
         portfolioModal1Title: "Daten Vorhersage",
-        portfolioModal1Text: "Uni Projekt bei dem ein Model zur Vorhersage von Daten entwickelt wurde. LINK.",
+        portfolioModal1Text: "Uni Projekt bei dem ein Model zur Vorhersage von Daten entwickelt wurde. Link zur Github Seite: .",
         portfolioModal2Title: "Web Scraper",
-        portfolioModal2Text: "Mein erstes kleines Projekt. Es ist ein Bot der täglich kostenlose Inhalte von CreativeFabrica herunterlädt. LINK.",
+        portfolioModal2Text: "Mein erstes kleines Projekt. Ich habe einen Bot programmiert der jeden Morgen kostenlose Inhalte von CreativeFabrica herunterlädt. Link zur Github Seite: .",
         portfolioModal3Title: "Bug Verfolgung / Überwachung",
-        portfolioModal3Text: "Erstes großes Projekt. Eine Website um Tickets oder Bugs zu überwachen. LINK.",
+        portfolioModal3Text: "Mein erstes größeres Projekt. Eine Website um Tickets oder Bugs zu überwachen. Link zur Github Seite: .",
         portfolioModal4Title: "Relationale Datenbanken",
-        portfolioModal4Text: "Meine relationale Datenbank. LINK.",
+        portfolioModal4Text: "Ich habe meine eigene relationale Datenbank erstellt um ... . Link zur Seite: .",
         portfolioModal5Title: "Qualitätssicherung",
-        portfolioModal5Text: " Arbeitserfahrung mit CodeceptJS und Cypress gesammelt.",
+        portfolioModal5Text: "Ich arbeite täglich mit CodeceptJS and Cypress. Deshalb habe ich automatisierte Tests in mein größeres Projekt integriert. Link zur Github Seite: ",
         portfolioModal6Title: "SCRUM & Kanban",
-        portfolioModal6Text: "Ich arbeite tagtäglich mit SCRUM und Kanban und bin mit beiden sehr vertraut.",
+        portfolioModal6Text: "Ich arbeite täglich mit SCRUM und Kanban und bin mit beiden sehr vertraut. Für meine Projekte habe ich Trelle benutzt um SCRUM zu implementieren. Link zum Trello Board: ",
+        iconPFM1: "Icon hergestellt von Becris - Flaticon",
+        iconPFM2: "Icon hergestellt von Icons8",
+        iconPFM3: "Icon hergestellt von Eucalyp - Flaticon",
+        iconPFM4: "Icon hergestellt von Becris - Flaticon",
+        iconPFM5: "Icon hergestellt von Freepik - Flaticon",
+        iconPFM6: "Icon hergestellt von Freepik - Flaticon",
     },
 };
 // Check if a hash value exists in the URL
@@ -150,6 +162,12 @@ if (window.location.hash == "#de") {
         portfolioModal5Text.textContent = language.de.portfolioModal5Text;
         portfolioModal6Title.textContent = language.de.portfolioModal6Title;
         portfolioModal6Text.textContent = language.de.portfolioModal6Text;
+        iconPFM1.textContent = language.de.iconPFM1;
+        iconPFM2.textContent = language.de.iconPFM2;
+        iconPFM3.textContent = language.de.iconPFM3;
+        iconPFM4.textContent = language.de.iconPFM4;
+        iconPFM5.textContent = language.de.iconPFM5;
+        iconPFM6.textContent = language.de.iconPFM6;
     }
 else if (window.location.hash == "#eng") {
         navbarResponsiveProjects.textContent = language.eng.navbarResponsiveProjects;
@@ -177,5 +195,11 @@ else if (window.location.hash == "#eng") {
         portfolioModal5Text.textContent = language.eng.portfolioModal5Text;
         portfolioModal6Title.textContent = language.eng.portfolioModal6Title;
         portfolioModal6Text.textContent = language.eng.portfolioModal6Text;
+        iconPFM1.textContent = language.eng.iconPFM1;
+        iconPFM2.textContent = language.eng.iconPFM2;
+        iconPFM3.textContent = language.eng.iconPFM3;
+        iconPFM4.textContent = language.eng.iconPFM4;
+        iconPFM5.textContent = language.eng.iconPFM5;
+        iconPFM6.textContent = language.eng.iconPFM6;
     }
 }
